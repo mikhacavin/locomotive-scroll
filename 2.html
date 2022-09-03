@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+  </head>
+  <body>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <h1 data-scroll>Hey</h1>
+        <h1 data-scroll>
+          <img
+            src="https://locomotivemtl.github.io/locomotive-scroll/dist/images/locomotive01.jpg"
+            alt=""
+          />
+        </h1>
+        <p data-scroll>👋</p>
+      </div>
+      <div data-scroll-section>
+        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+        <p data-scroll data-scroll-speed="2" data-scroll-delay="0.18">😬</p>
+        <p
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-direction="horizontal"
+          data-scroll-delay="0.18"
+        >
+          😬
+        </p>
+        <h1
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="2"
+          data-scroll-delay="1"
+        >
+          <img
+            src="https://locomotivemtl.github.io/locomotive-scroll/dist/images/locomotive01.jpg"
+            alt=""
+          />
+        </h1>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      //   const locoscroll = new LocomotiveScroll({
+      //     el: document.querySelector("[data-scroll-container]"),
+      //     smooth: true,
+      //     smartpohone: {
+      //       smooth: true,
+      //     },
+      //   });
+
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+    </script>
+  </body>
+</html>
